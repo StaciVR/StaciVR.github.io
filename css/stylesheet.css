@@ -4,6 +4,7 @@
 }
 
 body {
+ 
   margin: 0;
   padding: 0;
 background-color: #A65362;
@@ -23,18 +24,52 @@ color: #F2E0D0;}
 
 
 #hero {
+  background-image: url(../images/heroPic.jpg);
+  background-size: cover;
   background-color: #F2E0D0;
+  padding-top: 5%;
+  padding-bottom: 5.5%;
+
 }
 
 span {
   color: #A65362;
 }
 
+
 #intro {
 font-weight: 700;
 font-size: 400%;
 color: #BF8F84;
+animation-name: introMove;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
 }
+
+
+@keyframes introMove {
+  0% {
+    transform: scale(100%);
+    transition: ease-in-out;
+  }
+
+  50% {
+    transform: scale(99%);
+    transition: ease-in-out;
+    
+
+
+  }
+
+  100% {
+    transform:scale(98%);
+    transition: ease-in-out;
+  
+  }
+}
+
 
 #profilePic {
   border-radius: 5%;
