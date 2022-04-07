@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+background-color: #A65362;
+font-family: 'raleway', 'sans' ;
+color: #F2E0D0;}
+
+.navbar {
+  background-color: #A65362;
+}
+
+#brandName {
+  font-weight: 100;
+  font-size: 2rem;
+  color:#F2E0D0;
+}
+
+
+
+#hero {
+  background-color: #F2E0D0;
+}
+
+span {
+  color: #A65362;
+}
+
+#intro {
+font-weight: 700;
+font-size: 400%;
+color: #BF8F84;
+}
+
+#profilePic {
+  border-radius: 5%;
+}
+
+#aboutMe {
+  padding: 10%;
+  margin: 2%;
+}
+
+#experience {
+  background-color: #F2E0D0;
+  color: #BF8F84;
+}
+
+#skills {
+  background-color: #F2E0D0;
+  color: #BF8F84;
+  
+  
+  
+  
+
+}
+  
+
+.contactIcon {
+  width: 3rem;
+  height: 3rem;
+  border: none;
+
+}
+
+footer {
+  background-color: #A65362;
+  text-align: end;
+
+}
+
+#bottomLink {
+  color: #F2E0D0;
+  font-size: medium;
+  text-decoration: none;
+}
+
+  /*font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+  background-color: #F2E0D0;
+  display: flex;
+  flex-direction: column;
+}
+
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  color: #F2E0D0;
+  font-size: 800%;
+}
+
+#slogan {
+  color: #F2E0D0;
+  padding-bottom: 15%;
+  font-size: 200%;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 250%;
+  color: #A65362;
+}
+
+img {
+  border-radius: 50%;
+  width: 250px;
+  height: 300px;
+  border: 3px solid #F2E0D0;
+  display: flex;
+ justify-content: center ;
+}
+
+header {
+  background-color: #A65362;
+  background-image: url(https://images.unsplash.com/photo-1558769132-cb1aea458c5e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0%;
+  padding: 5%;
+  text-align: center;
+}
+   
+#menu {
+  background-color: #A65362;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.navOption {
+  text-decoration: none;
+  color: #F2E0D0;
+  font-weight: 400;
+  font-family: 'playfair display', serif;
+}
+
+#profile {
+  background-color: #BF8F84;
+  margin: 0%;
+  padding: 5%;
+  flex-basis: 1rem;
+  flex-grow: 1;
+}
+
+.info {
+  padding: 0 5% 0 5%;
+  flex-basis: 2rem;
+}
+
+#main {
+  display: flex;
+  flex-direction: row;
+  overflow: unset;
+}
+
+.skillsSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 5%;
+}
+
+#contact {
+  color: #F2E0D0;
+  text-align: center;
+}
+
+footer {
+  background-color: #A65362;
+  text-align: center;
+
+}
+
+
+
+
+#bottomLink {
+  color: #F2E0D0;
+  font-size: medium;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  h1 { font-size: 400%;}
+  #slogan {font-size: 120%;}
+  #menu {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+  }
+  .navOption {
+   color: #F2E0D0;}
+  .navOption:hover { background-color:#BF8F84;}
+  #main {flex-direction: column;}
+ }
+
+ @media screen and (max-width:900px) {
+  h1 { font-size: 450%;}
+  #menu {
+    background-color: transparent;
+  }
+  .navOption:hover { background-color:#BF8F84;}
+
+ }
+
+ @media screen and (max-width: 775px) {
+  h1 { font-size: 400%;}
+  #slogan {font-size: 120%;}
+  #menu {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+  }
+  .navOption {
+   color: #F2E0D0;}
+  .navOption:hover { background-color:#BF8F84;}
+  #main {flex-direction: column;}
+  picture { margin-left: 30%;}
+
+ }
+
+
+ @media screen and (max-width: 550px) {
+  h1 { font-size: 400%;}
+  #slogan {font-size: 120%;}
+  #menu {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+  }
+  .navOption {
+   color: #F2E0D0;}
+  .navOption:hover { background-color:#BF8F84;}
+  #main {flex-direction: column;}
+  picture { margin-left: 20%;}
+ }
