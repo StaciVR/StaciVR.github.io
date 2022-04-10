@@ -22,7 +22,7 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-light navbar-expand-lg px-5">
+        <nav class="navbar navbar-light navbar-expand-lg px-5 fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#" id="brandName">STACI VAN ROOY</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -63,7 +63,7 @@
         </nav>
 
 
-        <div class="container-fluid" id="hero">
+        <div class="container" id="hero">
             <div class="row">
                 <p id="intro" class="col p-5 m-0">
                     <span>Fashion Industry</span>
@@ -80,7 +80,7 @@
         </div>
     </header>
 
-    <main id="main" class="container-fluid">
+    <main id="main" class="container">
 
         <article class="row p-5" id="aboutMe">
 
@@ -166,18 +166,110 @@
             </div>
         </article>
 
+        <article class="row p-5" id="myWork">
+            <div class="info">
+                <h2 class="row justify-content-center">Some of My Work</h2>
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="https://www.behance.net/gallery/118958549/Fashion-Styling-Breeze" target="_blank">
+                                <img src="images/carouselPic1.jpg" class="d-block w-100" alt="Styling project">
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Breeze</h5>
+                                <p>A design & styling project</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.behance.net/gallery/125045017/Textile-Design-Wild-Flowers"
+                                target="_blank">
+                                <img src="images/carouselPic2.jpg" class="d-block w-100" alt="Trend Project">
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Wild Flowers</h5>
+                                <p>Womenswear textile design project</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.behance.net/gallery/120371621/Content-Creation-Breeze-Layout"
+                                target="_blank">
+                                <img src="images/carouselPic3.jpg" class="d-block w-100" alt="Content creation project">
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Instagram Content Creation</h5>
+                                <p>Content creation project inspired by puzzle design layout</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        </article>
+
         <article class="row p-5" id="education">
             <div class="info">
-                <h2 id="education">Education</h2>
-                <h3>Advanced Diploma in fashion design</h3>
-                <p>2013 - 2014 • Cape Town College of Fashion Design</p>
+                <h2 id="education" class="row justify-content-center">Education</h2>
 
-                <h3>Diploma in fashion design & International
-                    Diploma from City & Guilds</h3>
-                <p>2010 - 2012 • Cape Town College of Fashion Design</p>
+                <div class="container">
+                    <div class="row justify-content-around p-5">
+                        <div class="card col-4" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Advanced Diploma: Fashion Design</h5>
+                                <p class="card-text">This course covered everything needed to start a career in the
+                                    fashion
+                                    industry.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Institution: Cape Town College of Fashion Design</li>
+                                <li class="list-group-item">Years: 2013-1014</li>
+                                <li class="list-group-item">Status: Complete</li>
+                            </ul>
+                        </div>
+                        <div class="card" style="width: 18rem;">
 
-                <h3>Matriculated with merit & subject distinctions</h3>
-                <p>2004 - 2009 • South Peninsula High</p>
+                            <div class="card-body">
+                                <h5 class="card-title">International Diploma: Fashion Design</h5>
+                                <p class="card-text">This course covered everything needed to start a career in the
+                                    fashion
+                                    industry.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Institution: City & Guilds</li>
+                                <li class="list-group-item">Years: 2010-1012</li>
+                                <li class="list-group-item">Status: Complete</li>
+                            </ul>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+
+                            <div class="card-body">
+                                <h5 class="card-title">Matric Certificate</h5>
+                                <p class="card-text">National qualification with merit and subject distinction</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">South Peninsula High School</li>
+                                <li class="list-group-item">Years: 2004-2009</li>
+                                <li class="list-group-item">Status: Complete</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
 
                 <h3>Additional Short Courses</h3>
                 <ul>
@@ -235,11 +327,34 @@
 
     </main>
 
-    <footer class="row justify-content-center m-5">
+    <footer class="row justify-content-center p-5">
 
         <div>
-            <h2 class="row justify-content-center mb-4" id="contact">Contact:</h2>
+            <h2 class="row justify-content-center" id="contact">Contact:</h2>
+            <p class="row justify-content-center">Get in touch by sending me a message or checking out my socials.</p>
         </div>
+
+        <form class="row g-3 p-5">
+            <div class="col-md-6">
+                <label for="validationDefault01" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="validationDefault01" value="e.g Jane Doe" required>
+            </div>
+            <div class="col-md-6">
+                <label for="validationDefault02" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="validationDefault02" value="example@gmail.com" required>
+            </div>
+
+            </div>
+            <div class="col-md-12">
+                <label for="validationDefault03" class="form-label">Message</label>
+                <textarea class="form-control" id="validationDefault03" required>Type your message here</textarea>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit" id="contactButton">Send
+                    Message</button>
+            </div>
+        </form>
+
 
         <div class="col-1">
             <a href="https://www.behance.net/stacivanrooy" target="_blank">
@@ -266,11 +381,37 @@
         </div>
 
         <div>
-            <a href="#brandName" id="bottomLink"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+            <a href="#hero" id="bottomLink"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                     fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
                     <path
                         d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
                 </svg></a>
+        </div>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary mt-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            About This Site
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">About this site</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="staticBackdropBody">
+                        Hi there, thanks for getting all the way to the end of my resume. I have coded this entire
+                        project using HTML5, CSS & the Bootsrap CSS Framework. It is my final assignment for the Web
+                        Design section of the Software development course I am currently completing through Code Space.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Thats's Great!</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </footer>

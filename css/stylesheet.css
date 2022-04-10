@@ -3,16 +3,29 @@
   padding: 0;
 }
 
-body {
- 
-  margin: 0;
-  padding: 0;
-background-color: #A65362;
+body { 
+margin: 0;
+padding: 0;
+background-color: #BF8F84;
 font-family: 'raleway', 'sans' ;
 color: #F2E0D0;}
 
 .navbar {
   background-color: #A65362;
+  opacity: 0.9;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #F2E0D0;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #BF8F84;
+  font-family: 'raleway' , 'sans';
+  font-weight: 100;
+}
+.dropdown-item {
+  color: #A65362;
 }
 
 #brandName {
@@ -76,8 +89,18 @@ animation-name: introMove;
 }
 
 #aboutMe {
-  padding: 10%;
-  margin: 2%;
+  
+  background-color: #A65362;
+}
+
+h3 {
+  font-size: 110%;
+  font-weight: 900;
+}
+
+
+.carousel-caption {
+  color: #A65362;
 }
 
 #experience {
@@ -85,24 +108,51 @@ animation-name: introMove;
   color: #BF8F84;
 }
 
+#education {
+  
+  background-color: #A65362;
+}
+
+div.card {
+  color: #A65362;
+  background-color: #F2E0D0;
+  border-color: #F2E0D0;
+}
+
+.list-group-item {
+  color: #A65362;
+  background-color: #F2E0D0;
+  border-color: #BF8F84;
+}
 #skills {
   background-color: #F2E0D0;
   color: #BF8F84;
-  
-  
-  
-  
-
 }
   
 
 .contactIcon {
   width: 3rem;
   height: 3rem;
-  border: none;
-
+  border-radius: 40%;
+  transition: 0.6s;
 }
 
+.contactIcon:hover {
+  background-color: #F2E0D0;
+}
+
+#contactButton {
+color: #A65362;
+background-color: #F2E0D0;
+border: none;
+transition: 0.3s;
+}
+
+#contactButton:hover {
+  color: #F2E0D0;
+  background-color: #A65362;
+  border: #F2E0D0 solid 1px;
+}
 footer {
   background-color: #A65362;
   text-align: end;
@@ -113,7 +163,33 @@ footer {
   color: #F2E0D0;
   font-size: medium;
   text-decoration: none;
+  transition: 0.3s;
 }
+
+#bottomLink:hover {
+  color: #BF8F84;
+}
+
+.btn-primary {
+  color: #A65362;
+  background-color: #F2E0D0;
+  border-color: #F2E0D0;
+}
+
+.btn-primary:hover {
+  color: #F2E0D0;
+  background-color: #BF8F84;
+  border-color: #BF8F84;
+}
+
+#staticBackdropLabel {
+  color: #A65362;
+}
+
+#staticBackdropBody {
+  color: #A65362;
+}
+
 
   /*font-family: 'Open Sans', sans-serif;
   font-weight: 200;
