@@ -19,9 +19,14 @@
         crossorigin="anonymous"></script>
 </head>
 
+<!-- Visual part of the website starts here-->
+
 <body>
 
+    <!--Header includes the navbar and the hero image (background image) with cover text (animated)-->
     <header>
+
+        <!--below navbar is a bootstrap component. Some changes to be made to the styling in CSS stylesheet-->
         <nav class="navbar navbar-light navbar-expand-lg px-5 fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#" id="brandName">STACI VAN ROOY</a>
@@ -55,14 +60,12 @@
                                         target="_blank">GitHub</a></li>
                             </ul>
                         </li>
-
                     </ul>
-
                 </div>
             </div>
         </nav>
 
-
+        <!--This div is for the hero section which will contain a background image with some intro/header text on top of it. This text must be styled in CSS stylesheet to inlcude some animation-->
         <div class="container" id="hero">
             <div class="row">
                 <p id="intro" class="col p-5 m-0">
@@ -74,25 +77,25 @@
                     <br>
                     Aspiring Developer.
                 </p>
-
-
             </div>
         </div>
     </header>
 
+    <!--Main section to contain the body of the resume, meaning all the information sections. it is going to be layed out using bootsrap containers and grid-->
     <main id="main" class="container">
 
-        <article class="row p-5" id="aboutMe">
-
-            <div class="col-5">
-                <!-- <picture class="col-3">
-                <source media="(max-width: 650px)" srcset="images/closeUp.jpg">
-                <source media="(max-width: 1000px)" srcset="images/midLength.jpg"> -->
-                <img id="profilePic" src="images/profilePic1.jpg" alt="Picture of Staci">
+        <!--1st sectoion of content. This will incude the about section with a profile picture. CSS to highlight that this section is different to the one before and after-->
+        <section class="row p-5" id="aboutMe">
+            <div class="col-lg-5">
+                <picture class="row justify-content-center">
+                    <source media="(max-width: 576px)" srcset="images/profilePic3.jpg">
+                    <source media="(max-width: 768px)" srcset="images/profilePic2.jpg">
+                    <img id="profilePic" src="images/profilePic1.jpg" alt="Picture of Staci">
+                </picture>
             </div>
-            <div class="col-7">
-                <h2 class="row justify-content-center">About Me</h2>
-                <p>Hardworking, dedicated and self motivated individual who always strives for the best. I enjoy
+            <div class="col-lg-7">
+                <h2 class="row justify-content-center mt-3">About Me</h2>
+                <p>I am a hardworking, dedicated and self motivated individual who always strives for the best. I enjoy
                     being
                     able
                     to
@@ -111,7 +114,7 @@
                 <div class="row align-items-center">
                     <p>Some of my interest include:</p>
 
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <ul>
                             <li>Fashion</li>
                             <li>Visual Design</li>
@@ -120,7 +123,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <ul>
                             <li>Adventure Activities</li>
                             <li>Spending Time with Family & Friends</li>
@@ -130,9 +133,10 @@
 
                 </div>
             </div>
-        </article>
+        </section>
 
-        <article class="row p-5" id="experience">
+        <!--2nd section of the resume to cover my work experience. CSS to highlight this section is seperate from the ones before and after-->
+        <section class="row p-5" id="experience">
             <div class="info">
                 <h2 id="experience">Experience</h2>
                 <h3>Freelance Designer </h3>
@@ -164,169 +168,167 @@
                     performance.
                 </p>
             </div>
-        </article>
+        </section>
 
-        <article class="row p-5" id="myWork">
-            <div class="info">
-                <h2 class="row justify-content-center">Some of My Work</h2>
-                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <a href="https://www.behance.net/gallery/118958549/Fashion-Styling-Breeze" target="_blank">
-                                <img src="images/carouselPic1.jpg" class="d-block w-100" alt="Styling project">
-                            </a>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Breeze</h5>
-                                <p>A design & styling project</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="https://www.behance.net/gallery/125045017/Textile-Design-Wild-Flowers"
-                                target="_blank">
-                                <img src="images/carouselPic2.jpg" class="d-block w-100" alt="Trend Project">
-                            </a>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Wild Flowers</h5>
-                                <p>Womenswear textile design project</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="https://www.behance.net/gallery/120371621/Content-Creation-Breeze-Layout"
-                                target="_blank">
-                                <img src="images/carouselPic3.jpg" class="d-block w-100" alt="Content creation project">
-                            </a>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Instagram Content Creation</h5>
-                                <p>Content creation project inspired by puzzle design layout</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+        <!--3rd section of the resume. This section will inlcude a bootsrap carousel with some mages of examples of my work. Each image to have a link to the full project on behance-->
+        <section class="row p-5" id="myWork">
+            <h2 class="row justify-content-center">Some of My Work</h2>
+
+            <!--bootsrap carousel component-->
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
                 </div>
-        </article>
-
-        <article class="row p-5" id="education">
-            <div class="info">
-                <h2 id="education" class="row justify-content-center">Education</h2>
-
-                <div class="container">
-                    <div class="row justify-content-around p-5">
-                        <div class="card col-4" style="width: 18rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">Advanced Diploma: Fashion Design</h5>
-                                <p class="card-text">This course covered everything needed to start a career in the
-                                    fashion
-                                    industry.</p>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Institution: Cape Town College of Fashion Design</li>
-                                <li class="list-group-item">Years: 2013-1014</li>
-                                <li class="list-group-item">Status: Complete</li>
-                            </ul>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="https://www.behance.net/gallery/118958549/Fashion-Styling-Breeze" target="_blank">
+                            <img src="images/carouselPic1.jpg" class="d-block w-100" alt="Styling project">
+                        </a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Breeze</h5>
+                            <p>A design & styling project</p>
                         </div>
-                        <div class="card" style="width: 18rem;">
-
-                            <div class="card-body">
-                                <h5 class="card-title">International Diploma: Fashion Design</h5>
-                                <p class="card-text">This course covered everything needed to start a career in the
-                                    fashion
-                                    industry.</p>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Institution: City & Guilds</li>
-                                <li class="list-group-item">Years: 2010-1012</li>
-                                <li class="list-group-item">Status: Complete</li>
-                            </ul>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://www.behance.net/gallery/125045017/Textile-Design-Wild-Flowers" target="_blank">
+                            <img src="images/carouselPic2.jpg" class="d-block w-100" alt="Trend Project">
+                        </a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Wild Flowers</h5>
+                            <p>Womenswear textile design project</p>
                         </div>
-                        <div class="card" style="width: 18rem;">
-
-                            <div class="card-body">
-                                <h5 class="card-title">Matric Certificate</h5>
-                                <p class="card-text">National qualification with merit and subject distinction</p>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">South Peninsula High School</li>
-                                <li class="list-group-item">Years: 2004-2009</li>
-                                <li class="list-group-item">Status: Complete</li>
-                            </ul>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://www.behance.net/gallery/120371621/Content-Creation-Breeze-Layout"
+                            target="_blank">
+                            <img src="images/carouselPic3.jpg" class="d-block w-100" alt="Content creation project">
+                        </a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Instagram Content Creation</h5>
+                            <p>Content creation project inspired by puzzle design layout</p>
                         </div>
                     </div>
                 </div>
-
-
-                <h3>Additional Short Courses</h3>
-                <ul>
-                    <li>Intro To Web - Code Space</li>
-                    <li>Adobe Illustrator CC – Essentials Training - By Daniel Scott</li>
-                    <li>Adobe Photoshop CC – Essentials & Advanced Training - By Daniel Scott </li>
-                    <li>Adobe Indesign CC – Essentials & Advanced Training - By Daniel Scott</li>
-                    <li>User Experience Design Essentials - Adobe XD UI UX Design - By Daniel Scott</li>
-                    <li>The Branding Masterclass for Graphic Design - By Lindsay Marsh</li>
-                </ul>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-        </article>
+        </section>
 
-        <article class="row p-5" id="skills">
-            <div class="info">
-                <h2 id="">Skills</h2>
-                <div class="row align-items-top">
-                    <div class="col-3">
-                        <ul>
-                            <li>Html</li>
-                            <li>CSS</li>
-                            <li>Adobe Photshop</li>
-                            <li>Adobe Illustrator</li>
-                            <li>Adobe Indesign</li>
-                            <li>Adobe XD</li>
+        <!--4th section of resume. Education to include boostrap card components.-->
+        <section class="row p-5" id="education">
+            <h2 id="education" class="row justify-content-center">Education</h2>
+
+            <!--card component from bootsrap-->
+            <div class="container">
+                <div class="row justify-content-around p-lg-5">
+                    <div class="card col-md-4 m-3" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Advanced Diploma: Fashion Design</h5>
+                            <p class="card-text">This course covered everything needed to start a career in the
+                                fashion
+                                industry.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Institution: Cape Town College of Fashion Design</li>
+                            <li class="list-group-item">Years: 2013-1014</li>
+                            <li class="list-group-item">Status: Complete</li>
                         </ul>
                     </div>
-
-                    <div class="col-3">
-                        <ul>
-                            <li>Figma</li>
-                            <li>Corel Draw</li>
-                            <li>Microsoft Office</li>
-                            <li>Garment Construction</li>
-                            <li>Pattern Making</li>
-                            <li>Makeup Application</li>
+                    <div class="card col-md-4 m-3" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">International Diploma: Fashion Design</h5>
+                            <p class="card-text">This course covered everything needed to start a career in the
+                                fashion
+                                industry.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Institution: City & Guilds</li>
+                            <li class="list-group-item">Years: 2010-1012</li>
+                            <li class="list-group-item">Status: Complete</li>
                         </ul>
                     </div>
-
-                    <div class="col-6">
-                        <ul>
-                            <li>Creative & Conceptual Thinker</li>
-                            <li>Problem Solver</li>
-                            <li>Works Well Under Pressure</li>
-                            <li>Takes Initiative</li>
-                            <li>Gives & Takes Direction Well</li>
-                            <li>Great Visual Eye & Visual Understanding</li>
-                            <li>Versatile & Adaptable</li>
+                    <div class="card col-md-4 m-3" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Matric Certificate</h5>
+                            <p class="card-text">National qualification with merit and subject distinction</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">South Peninsula High School</li>
+                            <li class="list-group-item">Years: 2004-2009</li>
+                            <li class="list-group-item">Status: Complete</li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </article>
 
+            <h3>Additional Short Courses</h3>
+            <ul>
+                <li>Intro To Web - Code Space</li>
+                <li>Adobe Illustrator CC – Essentials Training - By Daniel Scott</li>
+                <li>Adobe Photoshop CC – Essentials & Advanced Training - By Daniel Scott </li>
+                <li>Adobe Indesign CC – Essentials & Advanced Training - By Daniel Scott</li>
+                <li>User Experience Design Essentials - Adobe XD UI UX Design - By Daniel Scott</li>
+                <li>The Branding Masterclass for Graphic Design - By Lindsay Marsh</li>
+            </ul>
+        </section>
+
+        <!--5th section of the resume. Skills section contains list of all skills using an unordered list element-->
+        <section class="row p-5" id="skills">
+            <h2 id="">Skills</h2>
+            <div class="row align-items-top">
+                <div class="col-lg-3">
+                    <ul>
+                        <li>Html</li>
+                        <li>CSS</li>
+                        <li>Adobe Photshop</li>
+                        <li>Adobe Illustrator</li>
+                        <li>Adobe Indesign</li>
+                        <li>Adobe XD</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <ul>
+                        <li>Figma</li>
+                        <li>Corel Draw</li>
+                        <li>Microsoft Office</li>
+                        <li>Garment Construction</li>
+                        <li>Pattern Making</li>
+                        <li>Makeup Application</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-6">
+                    <ul>
+                        <li>Creative & Conceptual Thinker</li>
+                        <li>Problem Solver</li>
+                        <li>Works Well Under Pressure</li>
+                        <li>Takes Initiative</li>
+                        <li>Gives & Takes Direction Well</li>
+                        <li>Great Visual Eye & Visual Understanding</li>
+                        <li>Versatile & Adaptable</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
     </main>
 
+
+    <!--footer section is the concluding section of the resume. It will contain some contact info as well as social media links, a button to get back to the top of page and a bootsrap model component. Social media links to have some animation to be included in the CSS stylesheet-->
     <footer class="row justify-content-center p-5">
 
         <div>
@@ -334,6 +336,7 @@
             <p class="row justify-content-center">Get in touch by sending me a message or checking out my socials.</p>
         </div>
 
+        <!--bootsrap form component-->
         <form class="row g-3 p-5">
             <div class="col-md-6">
                 <label for="validationDefault01" class="form-label">Full Name</label>
@@ -355,32 +358,37 @@
             </div>
         </form>
 
+        <!-- social media links in this div-->
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col-1">
+                    <a href="https://www.behance.net/stacivanrooy" target="_blank">
+                        <img src="images/behanceIcon.png" alt="Behance Portfolio" class="contactIcon">
+                    </a>
+                </div>
 
-        <div class="col-1">
-            <a href="https://www.behance.net/stacivanrooy" target="_blank">
-                <img src="images/behanceIcon.png" alt="Behance Portfolio" class="contactIcon">
-            </a>
+                <div class="col-1">
+                    <a href="https://www.linkedin.com/in/staci-van-rooy/" target="_blank">
+                        <img src="images/linkedinIcon.png" alt="LinkedIn Profile" class="contactIcon">
+                    </a>
+                </div>
+
+                <div class="col-1">
+                    <a href="https://www.instagram.com/staci_vr/" target="_blank">
+                        <img src="images/instagramIcon.png" alt="Instagram Profile" class="contactIcon">
+                    </a>
+                </div>
+
+                <div class="col-1">
+                    <a href="mailto:stacivanrooy@gmail.com" target="_blank">
+                        <img src="images/emailIcon.png" alt="Email Me" class="contactIcon">
+                    </a>
+                </div>
+            </div>
         </div>
 
-        <div class="col-1">
-            <a href="https://www.linkedin.com/in/staci-van-rooy/" target="_blank">
-                <img src="images/linkedinIcon.png" alt="LinkedIn Profile" class="contactIcon">
-            </a>
-        </div>
-
-        <div class="col-1">
-            <a href="https://www.instagram.com/staci_vr/" target="_blank">
-                <img src="images/instagramIcon.png" alt="Instagram Profile" class="contactIcon">
-            </a>
-        </div>
-
-        <div class="col-1">
-            <a href="mailto:stacivanrooy@gmail.com" target="_blank">
-                <img src="images/emailIcon.png" alt="Email Me" class="contactIcon">
-            </a>
-        </div>
-
-        <div>
+        <!-- back to top link using a bootsrap icon-->
+        <div class="row mt-3">
             <a href="#hero" id="bottomLink"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                     fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
                     <path
@@ -388,12 +396,12 @@
                 </svg></a>
         </div>
 
-        <!-- Button trigger modal -->
+        <!-- Button trigger modal from bootstrap -->
         <button type="button" class="btn btn-primary mt-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
             About This Site
         </button>
 
-        <!-- Modal -->
+        <!-- Modal component from bootstrap -->
         <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">

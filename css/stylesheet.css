@@ -1,15 +1,13 @@
-* {
+/* General styling for the entire body of the resume site*/
+body {
   margin: 0;
   padding: 0;
+  background-color: #BF8F84;
+  font-family: 'raleway', 'sans';
+  color: #F2E0D0;
 }
 
-body { 
-margin: 0;
-padding: 0;
-background-color: #BF8F84;
-font-family: 'raleway', 'sans' ;
-color: #F2E0D0;}
-
+/* css styling for the header section which is made up of the navbar & the hero section)*/
 .navbar {
   background-color: #A65362;
   opacity: 0.9;
@@ -21,9 +19,10 @@ color: #F2E0D0;}
 
 .navbar-light .navbar-nav .nav-link:hover {
   color: #BF8F84;
-  font-family: 'raleway' , 'sans';
+  font-family: 'raleway', 'sans';
   font-weight: 100;
 }
+
 .dropdown-item {
   color: #A65362;
 }
@@ -31,10 +30,8 @@ color: #F2E0D0;}
 #brandName {
   font-weight: 100;
   font-size: 2rem;
-  color:#F2E0D0;
+  color: #F2E0D0;
 }
-
-
 
 #hero {
   background-image: url(../images/heroPic.jpg);
@@ -42,26 +39,24 @@ color: #F2E0D0;}
   background-color: #F2E0D0;
   padding-top: 5%;
   padding-bottom: 5.5%;
-
 }
 
 span {
   color: #A65362;
 }
 
-
 #intro {
-font-weight: 700;
-font-size: 400%;
-color: #BF8F84;
-animation-name: introMove;
+  font-weight: 700;
+  font-size: 400%;
+  color: #BF8F84;
+  animation-name: introMove;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in;
   animation-direction: alternate;
 }
 
-
+/*animation styling below*/
 @keyframes introMove {
   0% {
     transform: scale(100%);
@@ -71,34 +66,32 @@ animation-name: introMove;
   50% {
     transform: scale(99%);
     transition: ease-in-out;
-    
-
-
   }
 
   100% {
-    transform:scale(98%);
+    transform: scale(98%);
     transition: ease-in-out;
-  
   }
 }
 
-
+/* styling for the about section. This includes the profile pic*/
 #profilePic {
-  border-radius: 5%;
+  border-radius: 45% 45% 0% 0%;
+  width: 70%;
+  height: 70%;
 }
 
 #aboutMe {
-  
   background-color: #A65362;
 }
 
+/*styles h3 elements throughout the resume*/
 h3 {
   font-size: 110%;
   font-weight: 900;
 }
 
-
+/* styling for the experience section of the resume. This inlcudes the carousel component from bootstrap*/
 .carousel-caption {
   color: #A65362;
 }
@@ -108,8 +101,8 @@ h3 {
   color: #BF8F84;
 }
 
+/* stuling for the education & skills sections. This includes the card component from boostrap*/
 #education {
-  
   background-color: #A65362;
 }
 
@@ -124,17 +117,24 @@ div.card {
   background-color: #F2E0D0;
   border-color: #BF8F84;
 }
+
 #skills {
   background-color: #F2E0D0;
   color: #BF8F84;
 }
-  
+
+/* styling for the footer & conatct section. This includes the form component from bootsrap as well as the social media section and also has a model at the bottom of the footer*/
+
+form {
+  border: #F2E0D0 1px solid;
+  background-color: #F2E0D0;
+}
 
 .contactIcon {
   width: 3rem;
   height: 3rem;
   border-radius: 40%;
-  transition: 0.6s;
+  transition: 0.5s;
 }
 
 .contactIcon:hover {
@@ -142,21 +142,25 @@ div.card {
 }
 
 #contactButton {
-color: #A65362;
-background-color: #F2E0D0;
-border: none;
-transition: 0.3s;
+  color: #F2E0D0;
+  background-color: #A65362;
+  border: none;
+  transition: 0.3s;
 }
 
 #contactButton:hover {
-  color: #F2E0D0;
-  background-color: #A65362;
-  border: #F2E0D0 solid 1px;
+  color: #A65362;
+  background-color: #BF8F84;
+  border: #BF8F84 solid 1px;
 }
+
+.form-label {
+  color: #A65362;
+}
+
 footer {
   background-color: #A65362;
   text-align: end;
-
 }
 
 #bottomLink {
@@ -170,6 +174,7 @@ footer {
   color: #BF8F84;
 }
 
+/*modal styling*/
 .btn-primary {
   color: #A65362;
   background-color: #F2E0D0;
@@ -190,167 +195,39 @@ footer {
   color: #A65362;
 }
 
+/* styling for some elemensts that require responsive changes for various viewports*/
 
-  /*font-family: 'Open Sans', sans-serif;
-  font-weight: 200;
-  background-color: #F2E0D0;
-  display: flex;
-  flex-direction: column;
-}
-
-
-h1 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 800;
-  color: #F2E0D0;
-  font-size: 800%;
-}
-
-#slogan {
-  color: #F2E0D0;
-  padding-bottom: 15%;
-  font-size: 200%;
-}
-
-h2 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 500;
-  font-size: 250%;
-  color: #A65362;
-}
-
-img {
-  border-radius: 50%;
-  width: 250px;
-  height: 300px;
-  border: 3px solid #F2E0D0;
-  display: flex;
- justify-content: center ;
-}
-
-header {
-  background-color: #A65362;
-  background-image: url(https://images.unsplash.com/photo-1558769132-cb1aea458c5e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: 0%;
-  padding: 5%;
-  text-align: center;
-}
-   
-#menu {
-  background-color: #A65362;
-  display: flex;
-  list-style-type: none;
-  justify-content: space-around;
-  margin-left: 20%;
-  margin-right: 20%;
-}
-
-.navOption {
-  text-decoration: none;
-  color: #F2E0D0;
-  font-weight: 400;
-  font-family: 'playfair display', serif;
-}
-
-#profile {
-  background-color: #BF8F84;
-  margin: 0%;
-  padding: 5%;
-  flex-basis: 1rem;
-  flex-grow: 1;
-}
-
-.info {
-  padding: 0 5% 0 5%;
-  flex-basis: 2rem;
-}
-
-#main {
-  display: flex;
-  flex-direction: row;
-  overflow: unset;
-}
-
-.skillsSection {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding-bottom: 5%;
-}
-
-#contact {
-  color: #F2E0D0;
-  text-align: center;
-}
-
-footer {
-  background-color: #A65362;
-  text-align: center;
-
-}
-
-
-
-
-#bottomLink {
-  color: #F2E0D0;
-  font-size: medium;
-  text-decoration: none;
+@media screen and (max-width: 992px) {
+  #profilePic {
+    border-radius: 15% 15% 15% 15%;
+    width: 50%;
+    height: 50%;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  h1 { font-size: 400%;}
-  #slogan {font-size: 120%;}
-  #menu {
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
+  #intro {
+    font-weight: 700;
+    font-size: 300%;
   }
-  .navOption {
-   color: #F2E0D0;}
-  .navOption:hover { background-color:#BF8F84;}
-  #main {flex-direction: column;}
- }
 
- @media screen and (max-width:900px) {
-  h1 { font-size: 450%;}
-  #menu {
-    background-color: transparent;
+  #profilePic {
+    border-radius: 15% 15% 15% 15%;
+    width: 50%;
+    height: 50%;
   }
-  .navOption:hover { background-color:#BF8F84;}
+}
 
- }
 
- @media screen and (max-width: 775px) {
-  h1 { font-size: 400%;}
-  #slogan {font-size: 120%;}
-  #menu {
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
+@media screen and (max-width: 576px) {
+  #intro {
+    font-weight: 700;
+    font-size: 250%;
   }
-  .navOption {
-   color: #F2E0D0;}
-  .navOption:hover { background-color:#BF8F84;}
-  #main {flex-direction: column;}
-  picture { margin-left: 30%;}
 
- }
-
-
- @media screen and (max-width: 550px) {
-  h1 { font-size: 400%;}
-  #slogan {font-size: 120%;}
-  #menu {
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
+  #profilePic {
+    border-radius: 15% 15% 15% 15%;
+    width: 50%;
+    height: 50%;
   }
-  .navOption {
-   color: #F2E0D0;}
-  .navOption:hover { background-color:#BF8F84;}
-  #main {flex-direction: column;}
-  picture { margin-left: 20%;}
- }
+}
